@@ -1,0 +1,36 @@
+
+   <form (ngSubmit)="anadirPersonaje()">
+      
+    <label>Nombre </label>
+    <input id="nombrePj"  type="text" name="nombre" [(ngModel)]="personaje.nombre"/>
+                        
+    <label>Apellidos</label>
+    <input id="apellidosPj" type="text" name="apellidos" [(ngModel)]="personaje.apellidos"/>
+    
+    <label>Edat</label>
+    <input id="correoPj" type="number" name="edat" [(ngModel)]="personaje.edat"/>
+    
+    <label>Foto</label>
+    <input id="correoPj" type="text" name="foto" [(ngModel)]="personaje.foto"/>
+    
+    <label>Descripcion</label>
+    <input id="correoPj" type="text" name="descripcion" [(ngModel)]="personaje.descripcion"/>
+
+    <label>Correo</label>
+    <input id="correoPj" type="email" name="correo" [(ngModel)]="personaje.correo"/>
+
+    <label>Contraseña</label>
+    <input id="contrasenaPj" type="password" name="contrasena" [(ngModel)]="personaje.contrasena"/>
+    
+    <label>Confirmar Contraseña</label>
+    <input id="confcontrasenaPj" type="password" name="confcontrasena" [(ngModel)]="personaje.confcontrasena"/>
+    
+    <input routerLink='' type="submit" value="Introducir">
+
+    <!-- <button   routerLink=''>salir</button> -->
+
+    </form>   
+
+    <br>
+
+  

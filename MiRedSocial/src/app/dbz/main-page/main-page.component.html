@@ -1,0 +1,16 @@
+     <app-personajes [personajesCompHijo]="personajes"></app-personajes>
+
+     <app-agregar (onNuevoPersonaje)="anadirPersonaje($event)" [personajesComponenteAgregar]="personajes"></app-agregar> 
+        
+
+     <h1>---------------------------------------------------------------</h1>
+Administrador
+<ul class="list-group">
+     <li  (click)="seleccionarUsu(pj)" class="list-group-item" *ngFor="let pj of personajes ">{{ pj.nombre }} {{ pj.apellidos }} 
+          <button (click)="eliminarUsu(pj)"> eliminar</button><br> </li> 
+    </ul>
+  
+
+ <h1>---------------------------------------------------------------</h1>
+
+

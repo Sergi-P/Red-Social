@@ -1,0 +1,23 @@
+<h1>---------------------------------------------------------------</h1>
+
+<ul class="list-group">
+     <li  (click)="seleccionarUsu(pj)" class="list-group-item" *ngFor="let pj of personajesCompHijo">{{ pj.nombre }} {{ pj.apellidos }} <!--{{ pj.contrasena }} {{ pj.confcontrasena }} {{ pj.fecha }} {{ pj.correo }}  --></li> 
+    </ul>
+    <p *ngIf="seleccionado.nombre!=''; else noselec">Se ha seleccionado el Usuario 
+     {{seleccionado.nombre}} {{seleccionado.apellidos}}<br>
+     {{seleccionado.edat}}<br>
+     {{seleccionado.foto}}<br>
+     {{seleccionado.descripcion}}<br>
+     {{seleccionado.correo}}<br>
+     {{seleccionado.contrasena}}<br></p>
+     <ng-template #noselec>No se ha seleccionado ningun usuario para ver sus detalles.</ng-template>
+
+   
+<br>
+     <!-- <a routerLink='/agregar' >Formulario</a>    -->
+ <h1>---------------------------------------------------------------</h1>
+
+   
+    
+      
+    
