@@ -1,16 +1,34 @@
-     <app-personajes [personajesCompHijo]="personajes"></app-personajes>
+     <h1>---------------------------------------------------------------</h1>
+     <button  routerLink='lista'>Usuarios Registrados</button> 
 
-     <app-agregar (onNuevoPersonaje)="anadirPersonaje($event)" [personajesComponenteAgregar]="personajes"></app-agregar> 
+     <br>
+
+     
+     <br>
+     <!-- <app-personajes [personajesCompHijo]="personajes" (onEnviarSelec)="seleccionarUsu($event)"></app-personajes>  <h1>---------------------------------------------------------------</h1>
+     <button   routerLink='detalles'>detalles</button> 
+     <br>
+
+     Detalles
+     <br>
+     
+     <app-detalles [seleccionado]="seleccionado" ></app-detalles> -->
+
+     <h1>---------------------------------------------------------------</h1>
+     <button  routerLink='agregar'>formulario</button> 
+     <br>
+
+     
+
+     <br>
+     <!-- <app-agregar (onNuevoPersonaje)="anadirPersonaje($event)" [personajesComponenteAgregar]="personajes"></app-agregar>  -->
         
 
      <h1>---------------------------------------------------------------</h1>
-Administrador
-<ul class="list-group">
-     <li  (click)="seleccionarUsu(pj)" class="list-group-item" *ngFor="let pj of personajes ">{{ pj.nombre }} {{ pj.apellidos }} 
-          <button (click)="eliminarUsu(pj)"> eliminar</button><br> </li> 
-    </ul>
-  
+     <button   routerLink='admin'>admin</button> 
+     <br>
 
- <h1>---------------------------------------------------------------</h1>
-
+     <br>
+     <!-- <app-administrador [seleccionado]="seleccionado" [personajes]="personajes" ></app-administrador> -->
+     <h1>---------------------------------------------------------------</h1>
 

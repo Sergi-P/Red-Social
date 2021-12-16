@@ -5,7 +5,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { ContadorModule } from "./contador/contador.module";
+import { AdministradorComponent } from './dbz/administrador/administrador.component';
 import { AgregarComponent } from './dbz/agregar/agregar.component';
+import { DetallesComponent } from './dbz/detalles/detalles.component';
 import { MainPageComponent } from './dbz/main-page/main-page.component';
 
  import { MRSModule } from "./dbz/MiRedSocial.module";
@@ -25,11 +27,20 @@ const routes:Routes=[
   {
     path:'lista',
     component: PersonajesComponent
-  }
+  },
+  {
+    path:'detalles',
+    component: DetallesComponent
+  },{
+    path:'admin',
+    component: AdministradorComponent
+  },
   ];
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
+    
+    
     
 
   ],

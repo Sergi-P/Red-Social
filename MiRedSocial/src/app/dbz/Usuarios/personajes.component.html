@@ -1,23 +1,22 @@
-<h1>---------------------------------------------------------------</h1>
+<div class="mover">
+<div class="testbox">
 
 <ul class="list-group">
-     <li  (click)="seleccionarUsu(pj)" class="list-group-item" *ngFor="let pj of personajesCompHijo">{{ pj.nombre }} {{ pj.apellidos }} <!--{{ pj.contrasena }} {{ pj.confcontrasena }} {{ pj.fecha }} {{ pj.correo }}  --></li> 
-    </ul>
-    <p *ngIf="seleccionado.nombre!=''; else noselec">Se ha seleccionado el Usuario 
-     {{seleccionado.nombre}} {{seleccionado.apellidos}}<br>
-     {{seleccionado.edat}}<br>
-     {{seleccionado.foto}}<br>
-     {{seleccionado.descripcion}}<br>
-     {{seleccionado.correo}}<br>
-     {{seleccionado.contrasena}}<br></p>
-     <ng-template #noselec>No se ha seleccionado ningun usuario para ver sus detalles.</ng-template>
+    <h1>Listado de Usuarios</h1>
+    <h3>(Click encima de un usuario para ver los detalles)</h3>
+<div class="lista">
+     <li  (click)="seleccionarUsu(pj)" class="list-group-item" *ngFor="let pj of personajes"><label>{{ pj.nombre }} {{ pj.apellidos }} </label><br></li> 
+   </div>
+   <div class="botons">
+    <a class="buttonS"><button routerLink=''>Volver al menu principal</button> </a>
+</div><br>
+</ul>
+    
 
-   
-<br>
-     <!-- <a routerLink='/agregar' >Formulario</a>    -->
- <h1>---------------------------------------------------------------</h1>
 
-   
+
+</div>
+   </div>
     
       
     

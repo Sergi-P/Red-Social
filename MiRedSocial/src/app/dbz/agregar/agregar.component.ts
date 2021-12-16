@@ -1,4 +1,5 @@
 import { Component, OnInit,Input, Output, EventEmitter  } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { Personaje } from '../interfaces/dbz.interfaces';
 @Component({
@@ -8,16 +9,16 @@ import { Personaje } from '../interfaces/dbz.interfaces';
 })
 export class AgregarComponent implements OnInit {
 
-  constructor() { }
+  route: ActivatedRoute;
+  router:Router;
 
+  constructor(route:ActivatedRoute, router:Router) { 
+    this.route=route;
+    this.router=router;
+
+  }
   ngOnInit(): void {
   }
-
-  
-  @Input() personajesComponenteAgregar: Personaje[]=[];
-  
-  
-  @Output() onNuevoPersonaje:EventEmitter<Personaje> = new EventEmitter();
 
   personaje:Personaje={
     nombre:"",
@@ -33,9 +34,10 @@ export class AgregarComponent implements OnInit {
     if(this.personaje.nombre.trim().length ===0){
       return;
     }
-  this.personajesComponenteAgregar.push(this.personaje);
   
-  
+  this.router.navigate(['lista', this.personaje ]);
+
+
   this.personaje={
     nombre:"",
     apellidos:"",
@@ -46,14 +48,6 @@ export class AgregarComponent implements OnInit {
     contrasena:"",
     confcontrasena:""
   }
-  
+
   }
-  
-
-
-
-
-
-
-
 }

@@ -24,6 +24,7 @@ td {
   padding: 0;
   margin: 0;
   font-size: x-large;
+  
 }
 
 fieldset,
@@ -69,8 +70,8 @@ button{
   color: rgb(255, 255, 255);
   background: none;
   border: none;
-  cursor: pointer;
 
+  cursor: pointer;
   
 }
 
@@ -109,11 +110,7 @@ label{
 
 }
 
-label:hover{
-background-color: #4c4c4c75;
-cursor: pointer;
 
-}
 
 a.buttonS {
  
@@ -127,13 +124,22 @@ a.buttonS {
   
   box-shadow: 0 3px rgba(173, 46, 84, 0.75);
   transition: all 0.1s linear 0s;
-  
 }
+a.buttonE {
+ 
+    color: white;
+    width: auto;
+    height: 27px;
+    margin-top: 20%;
+    border-radius: 5px;
+    background-color: #af3a40;
+    
+    box-shadow: 0 3px rgba(173, 46, 84, 0.75);
+    transition: all 0.1s linear 0s;
+    
+  }
 .botons{
     margin-top: 30%;
-    
-
 }
-
 
 

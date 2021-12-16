@@ -1,0 +1,12 @@
+<p *ngIf="seleccionado1.nombre!=''; else noselec">Se ha seleccionado el Usuario 
+    {{seleccionado1.nombre}} {{seleccionado1.apellidos}}<br>
+    {{seleccionado1.edat}}<br>
+    {{seleccionado1.foto}}<br>
+    {{seleccionado1.descripcion}}<br>
+    {{seleccionado1.correo}}<br>
+    {{seleccionado1.contrasena}}<br></p>
+     <ng-template #noselec>No se ha seleccionado1 ningun usuario para ver sus detalles.</ng-template>
+
+
+     <button routerLink=''>Volver al menu principal</button>
+     <button (click)="volverlista()">Volver al Listado</button>

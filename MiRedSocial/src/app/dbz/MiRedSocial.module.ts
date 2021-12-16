@@ -4,7 +4,9 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { FormsModule } from '@angular/forms';
 import { PersonajesComponent } from './Usuarios/personajes.component';
 import { AgregarComponent } from './agregar/agregar.component';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { DetallesComponent } from './detalles/detalles.component';
+import { AdministradorComponent } from './administrador/administrador.component';
 
 
 
@@ -12,7 +14,9 @@ import { RouterModule, Routes } from '@angular/router';
   declarations: [
     MainPageComponent,
     PersonajesComponent,
-    AgregarComponent
+    AgregarComponent,
+    DetallesComponent,
+    AdministradorComponent
     
   ],
   exports:[MainPageComponent],

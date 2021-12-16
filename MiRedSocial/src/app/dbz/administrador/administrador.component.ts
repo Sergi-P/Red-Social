@@ -1,14 +1,13 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-
 import { Personaje } from '../interfaces/dbz.interfaces';
 
 @Component({
-  selector: 'app-personajes',
-  templateUrl: './personajes.component.html',
-  styleUrls: ['./personajes.component.css']
+  selector: 'app-administrador',
+  templateUrl: './administrador.component.html',
+  styleUrls: ['./administrador.component.css']
 })
-export class PersonajesComponent implements OnInit {
+export class AdministradorComponent implements OnInit {
 
   route: ActivatedRoute;
   router:Router;
@@ -19,18 +18,16 @@ export class PersonajesComponent implements OnInit {
     this.personajes = JSON.parse(localStorage.getItem('listado') || '[]');
   }
 
-personaje:Personaje={
-  nombre:"",
-  apellidos:"",
-  edat:"",
-  foto:"",
-  descripcion:"",
-  correo:"",
-  contrasena:"",
-  confcontrasena:""
-}
-
-
+  personaje:Personaje={
+    nombre:"",
+    apellidos:"",
+    edat:"",
+    foto:"",
+    descripcion:"",
+    correo:"",
+    contrasena:"",
+    confcontrasena:""
+  }
   ngOnInit(): void {
     this.personaje={
       nombre:String (this.route.snapshot.paramMap.get('nombre')),
@@ -48,24 +45,24 @@ personaje:Personaje={
     if(this.personaje.nombre != "null"){
       this.personajes.push(this.personaje);
       localStorage.setItem('listado', JSON.stringify(this.personajes));
-      this.router.navigate(['lista']);
-      
+      this.router.navigate(['admin']);
+
 
     } 
-       
   }
-personajes:Personaje[]=[];
 
   seleccionado:Personaje={
-    nombre:"",
-    apellidos:"",
-    edat:"",
-    foto:"",
-    descripcion:"",
-    correo:"",
-    contrasena:"",
-    confcontrasena:""
-  };
+      nombre:"",
+      apellidos:"",
+      edat:"",
+      foto:"",
+      descripcion:"",
+      correo:"",
+      contrasena:"",
+      confcontrasena:""
+    };
+personajes:Personaje[]=[];
+  
 
   seleccionarUsu(Usu:Personaje){
     this.seleccionado.nombre=Usu.nombre;
@@ -76,8 +73,16 @@ personajes:Personaje[]=[];
     this.seleccionado.correo=Usu.correo;
     this.seleccionado.contrasena=Usu.contrasena;
     this.seleccionado.confcontrasena=Usu.confcontrasena;
-    
-  this.router.navigate(['detalles', Usu ]);
   }
- 
+  eliminarUsu(Usu2:Personaje){
+    for (let i = 0; i < this.personajes.length; i++) {
+      if(Usu2.correo==this.personajes[i].correo ){
+        this.personajes.splice(i, 1);
+        localStorage.setItem('listado', JSON.stringify(this.personajes));
+
+    }
+    
+    }
+   
+  }
 }
