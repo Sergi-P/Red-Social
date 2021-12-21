@@ -1,1 +1,145 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  font-size: x-large;
+  
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  display: inline-block;
+}
+.lista{
+    justify-content: flex-end;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+li {
+width: 100%;
+
+margin-top: 5vh;
+}
+:focus {
+  outline: none;
+}
+
+body,
+input,
+textarea,
+select{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  background: none;
+}
+button{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  background: none;
+  border: none;
+
+  cursor: pointer;
+  
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #4c4c4c;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+html {
+  background-color: #ffffff;
+}
+.mover{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.testbox {
+  position: relative;
+  width: auto;
+  height: auto;
+  border-radius: 8px/7px;
+  background-color: #ebebeb; 
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.31);
+  border: solid 1px #cbc9c9;
+  padding:5%
+}
+label{
+    width: auto;
+
+  padding:3%;
+
+}
+
+
+
+a.buttonS {
+ 
+  color: white;
+  padding: 6px 25px 0px 20px;
+  width: auto;
+  height: 27px;
+  
+  border-radius: 5px;
+  background-color: #af3a40;
+  
+  box-shadow: 0 3px rgba(173, 46, 84, 0.75);
+  transition: all 0.1s linear 0s;
+}
+
+.buttonE {
+ 
+    color: white;
+    width: auto;
+    height: 27px;
+    border-radius: 5px;
+    background-color: #3a57af;
+    
+    box-shadow: 0 3px #2f4a99;
+    transition: all 0.1s linear 0s;
+    
+  }
+.botons{
+    margin-top: 30%;
+}
+
 

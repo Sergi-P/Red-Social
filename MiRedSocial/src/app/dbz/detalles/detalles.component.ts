@@ -12,7 +12,7 @@ export class DetallesComponent implements OnInit {
 seleccionado1:Personaje={
       nombre:"",
       apellidos:"",
-      edat:"",
+      edat:0,
       foto:"",
       descripcion:"",
       correo:"",
@@ -31,7 +31,7 @@ seleccionado1:Personaje={
     this.seleccionado1={
       nombre:String (this.route.snapshot.paramMap.get('nombre')),
       apellidos:String (this.route.snapshot.paramMap.get('apellidos')),
-      edat:String (this.route.snapshot.paramMap.get('edat')),
+      edat:Number (this.route.snapshot.paramMap.get('edat')),
       foto:String (this.route.snapshot.paramMap.get('foto')),
       descripcion:String (this.route.snapshot.paramMap.get('descripcion')),
       correo:String (this.route.snapshot.paramMap.get('correo')),

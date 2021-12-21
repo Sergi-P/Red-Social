@@ -1,9 +1,10 @@
 
 
 export interface Personaje {
+  
     nombre: String,
     apellidos: String,
-    edat:String,
+    edat:number,
     foto:String,
     descripcion:String,
     correo: String,

@@ -18,7 +18,7 @@ export class MainPageComponent{
   personaje:Personaje={
     nombre:"",
     apellidos:"",
-    edat:"",
+    edat:0,
     foto:"",
     descripcion:"",
     correo:"",

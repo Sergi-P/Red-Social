@@ -5,33 +5,35 @@
 
   <form (ngSubmit)="anadirPersonaje()">
   
-   <label ></label>
-  <input id="nombrePj"  type="text" name="nombre" [(ngModel)]="personaje.nombre" placeholder="Name" required/>
-  <br>
-  <label></label>
-  <input id="apellidosPj" type="text" name="apellidos" [(ngModel)]="personaje.apellidos" placeholder="Surname" required/>
-  <br>
-  <label></label>
-  <input id="correoPj" type="text" name="edat" [(ngModel)]="personaje.edat" placeholder="Age" required/>
-  <br>
-  <label ></label>
-  <input id="correoPj" type="text" name="foto" [(ngModel)]="personaje.foto" placeholder="Foto" required/>
-  <br>
-  <label ></label>
-  <input id="correoPj" type="text" name="descripcion" [(ngModel)]="personaje.descripcion" placeholder="Description" required/>
-  <br>
-   <label></label>
-  <input id="correoPj" type="email" name="correo" [(ngModel)]="personaje.correo" placeholder="Email" required/>
-  <br>
-  <label></label>
-  <input id="contrasenaPj" type="password" name="contrasena" [(ngModel)]="personaje.contrasena" placeholder="Password" required/>
-  <br>
-  <label></label>
-  <input id="confcontrasenaPj" type="password" name="confcontrasena" [(ngModel)]="personaje.confcontrasena" placeholder="Confirm Password" required/>
+   <label >NOMBRE</label><br>
+  <input id="nombrePj"  type="text" name="nombre" [(ngModel)]="personaje.nombre" placeholder="Name"   required />
+  <br><br>
+  <label>APELLIDOS</label><br>
+  <input id="apellidosPj" type="text" name="apellidos" [(ngModel)]="personaje.apellidos" placeholder="Surname"  required/>
+  <br><br>
+  <label>EDAD</label><br>
+  <input id="edatPj" type="text" name="edat" [(ngModel)]="personaje.edat" placeholder="0"  required/>
+  <br><br>
+  <label >FOTO</label><br>
+  <input id="fotoPj" type="text" name="foto" [(ngModel)]="personaje.foto" placeholder="Foto"  required/>
+  <br><br>
+  <label >DESCRIPCION</label><br>
+  <input id="decPj" type="text" name="descripcion" [(ngModel)]="personaje.descripcion" placeholder="Desc."  required/>
+  <br><br>
+   <label>CORREO</label><br>
+  <input id="correoPj" type="text" name="correo" [(ngModel)]="personaje.correo" placeholder="Email"  required/>
+  <br><br>
+  <label>CONTRASEÑA</label><br>
+  <input id="contrasenaPj" type="password" name="contrasena" [(ngModel)]="personaje.contrasena" placeholder="Password"  required/>
+  <br><br>
+  <label>CONFIRMAR CONTRASEÑA</label><br>
+  <input id="confcontrasenaPj" type="password" name="confcontrasena" [(ngModel)]="personaje.confcontrasena" placeholder="Repeat Password"  required/>
   <br>
 
 <div class="botons">
+
   <a class="buttonR"><button  routerLink='lista' type="submit" >Register</button> </a>
+  
   <a class="buttonS"><button routerLink=''>Cancelar</button> </a>
 </div>
   </form>

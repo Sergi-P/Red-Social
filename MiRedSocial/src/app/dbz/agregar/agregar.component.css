@@ -1,30 +1,9 @@
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
-  padding: 0;
-  margin: 0;
-}
 
+
+.correcto{
+
+  margin-left: 2rem;
+}
 fieldset,
 img {
   border: 0;
@@ -81,21 +60,18 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-display: flex;
+  display: flex;
 }
 .testbox {
   position: relative;
   width: 25vw;
-  height: 60vh;
+  height: 95vh;
   border-radius: 8px/7px;
   background-color: #ebebeb; 
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.31);
   border: solid 1px #cbc9c9;
 }
-label{
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.31);
-  border: solid 1px #cbc9c9;
-}
+
 
 
 form {
@@ -175,6 +151,8 @@ a.buttonR {
   box-shadow: 0 3px rgba(58, 87, 175, 0.75);
   transition: all 0.1s linear 0s;
   position: relative;
+  cursor: pointer;
+
 }
 a.buttonS {
   justify-content: center;
@@ -193,17 +171,6 @@ a.buttonS {
   box-shadow: 0 3px rgba(173, 46, 84, 0.75);
   transition: all 0.1s linear 0s;
   position: relative;
-  
+  cursor: pointer;
 }
-a.buttonR:hover{
-  top: 3px;
-  background-color: #2e458b;
- 
-  box-shadow: none;
-}
-a.buttonS:hover {
-  top: 3px;
-  background-color: #861330;
- 
-  box-shadow: none;
-}
+

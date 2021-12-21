@@ -22,7 +22,7 @@ export class PersonajesComponent implements OnInit {
 personaje:Personaje={
   nombre:"",
   apellidos:"",
-  edat:"",
+  edat:0,
   foto:"",
   descripcion:"",
   correo:"",
@@ -35,7 +35,7 @@ personaje:Personaje={
     this.personaje={
       nombre:String (this.route.snapshot.paramMap.get('nombre')),
       apellidos:String (this.route.snapshot.paramMap.get('apellidos')),
-      edat:String (this.route.snapshot.paramMap.get('edat')),
+      edat:Number (this.route.snapshot.paramMap.get('edat')),
       foto:String (this.route.snapshot.paramMap.get('foto')),
       descripcion:String (this.route.snapshot.paramMap.get('descripcion')),
       correo:String (this.route.snapshot.paramMap.get('correo')),
@@ -59,7 +59,7 @@ personajes:Personaje[]=[];
   seleccionado:Personaje={
     nombre:"",
     apellidos:"",
-    edat:"",
+    edat:0,
     foto:"",
     descripcion:"",
     correo:"",

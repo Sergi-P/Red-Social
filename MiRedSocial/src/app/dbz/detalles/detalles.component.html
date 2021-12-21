@@ -1,12 +1,33 @@
-<p *ngIf="seleccionado1.nombre!=''; else noselec">Se ha seleccionado el Usuario 
-    {{seleccionado1.nombre}} {{seleccionado1.apellidos}}<br>
-    {{seleccionado1.edat}}<br>
-    {{seleccionado1.foto}}<br>
-    {{seleccionado1.descripcion}}<br>
-    {{seleccionado1.correo}}<br>
-    {{seleccionado1.contrasena}}<br></p>
-     <ng-template #noselec>No se ha seleccionado1 ningun usuario para ver sus detalles.</ng-template>
 
 
-     <button routerLink=''>Volver al menu principal</button>
-     <button (click)="volverlista()">Volver al Listado</button>
+     
+     <div class="mover">
+        <div class="testbox">
+            <h1>Detalles del usuario</h1>
+
+        <ul class="list-group">
+            
+        <div class="lista">
+            <p *ngIf="seleccionado1.nombre!=''; else noselec">Estos son los datos del Usuario seleccionado:<br><br>
+               <u>Nombre y apellido/s</u>: {{seleccionado1.nombre}} {{seleccionado1.apellidos}}<br><br>
+               <u>Edad</u>: {{seleccionado1.edat}}<br><br>
+               <u>Foto</u>: {{seleccionado1.foto}}<br><br>
+               <u>Descripcion</u>: {{seleccionado1.descripcion}}<br><br>
+               <u>Correo</u>: {{seleccionado1.correo}}<br><br>
+               <u>Contraseña</u>: {{seleccionado1.contrasena}}<br><br></p>
+                 <ng-template #noselec>No se ha seleccionado1 ningun usuario para ver sus detalles.</ng-template>
+            
+           </div>
+           <div class="botons">
+            <a class="buttonS" (click)="volverlista()">Volver al Listado</a>
+        </div>
+        <div class="botons">
+            <a class="buttonS" routerLink=''>Volver al menu principal </a>
+        </div><br>
+        </ul>
+            
+        
+        
+        
+        </div>
+           </div>
